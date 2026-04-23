@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LifeLine</title>
+</head>
+
+<body style="text-align:center; font-family:Arial; background-color:#f2f2f2;">
+
+<h1>🚑 LifeLine - Emergency Assistant</h1>
+
+<!-- SOS -->
+<button style="padding:15px; margin:10px; font-size:18px; background-color:red; color:white; border:none; border-radius:10px;"
+onclick="sendSOS()">🚨 SOS</button>
+
+<!-- Hospitals -->
+<button style="padding:15px; margin:10px; font-size:18px; background-color:blue; color:white; border:none; border-radius:10px;"
+onclick="showHospitals()">🏥 Nearby Hospitals</button>
+
+<!-- First Aid -->
+<button style="padding:15px; margin:10px; font-size:18px; background-color:green; color:white; border:none; border-radius:10px;"
+onclick="showFirstAid()">🩹 First Aid</button>
+
+<p id="output" style="margin-top:20px; font-size:18px; white-space:pre-line;"></p>
+
+<script>
+
+// SOS with detailed explanation
+function sendSOS() {
+  document.getElementById("output").innerText =
+  "🚨 SOS Emergency Alert:\n" +
+  "1. Sends emergency alert to contacts.\n" +
+  "2. Helps user quickly ask for help.\n" +
+  "3. Can share location in real app.\n" +
+  "4. Used in critical situations to save time.";
+}
+
+// Open Google Maps for hospitals
+function showHospitals() {
+  window.open("https://www.google.com/maps/search/hospitals+near+me");
+}
+
+// Show First Aid options
+function showFirstAid() {
+  document.getElementById("output").innerHTML =
+  `<br>
+   <button onclick="showAid('Bleeding')">Bleeding</button><br><br>
+   <button onclick="showAid('Burn')">Burn</button><br><br>
+   <button onclick="showAid('Faint')">Faint</button><br><br>
+   <button onclick="showAid('Fracture')">Fracture</button><br><br>
+   <button onclick="showAid('Spinal')">Spinal Injury</button>`;
+}
+
+// Show First Aid details
+function showAid(type) {
+  let text = "";
+
+  if(type=="Bleeding"){
+    text="🩸 Bleeding:\n1. Apply firm pressure with clean cloth.\n2. Elevate injured area.\n3. Do not remove cloth.\n4. Go to hospital immediately.";
+  }
+  else if(type=="Burn"){
+    text="🔥 Burn:\n1. Cool with running water (10 min).\n2. Do NOT apply oil or ice.\n3. Cover with clean cloth.\n4. Seek medical help.";
+  }
+  else if(type=="Faint"){
+    text="😵 Faint:\n1. Lay person flat.\n2. Lift legs slightly.\n3. Ensure fresh air.\n4. Give water after recovery.";
+  }
+  else if(type=="Fracture"){
+    text="🦴 Fracture:\n1. Do not move injured part.\n2. Support with cloth/splint.\n3. Use cold pack for swelling.\n4. Take to hospital.";
+  }
+  else if(type=="Spinal"){
+    text="🧠 Spinal Injury:\n1. Do NOT move the person.\n2. Keep head and neck stable.\n3. Call emergency help.\n4. Avoid twisting body.";
+  }
+
+  document.getElementById("output").innerText = text;
+}
+
+</script>
+
+</body>
+</html>
