@@ -1,5 +1,52 @@
-The SOS Emergency Assistance System is a smart mobile-based application designed to provide immediate help during emergency situations such as accidents, health issues, or unsafe conditions. The main purpose of this project is to reduce response time and ensure quick access to help when it is needed the most.
-In this system, the user can activate an SOS alert using a simple button press or voice command. Once triggered, the application sends emergency notifications to pre-set contacts such as family members, friends, or emergency services along with the user’s real-time location.
-The system also includes a hospital finder feature, which uses GPS and map services to display the nearest hospitals for quick medical assistance. Along with this, it provides first aid guidance instructions to help the user manage the situation until professional help arrives.
-The backend of the system is developed using Python, which handles all processing tasks such as alert generation, location tracking, and data management. The frontend runs on a mobile application, making it easy and user-friendly.
-Overall, this project acts as a life-saving digital assistant that ensures fast communication, accurate location tracking, and emergency support in critical situations.
+# 🚑 LifeLine - Emergency Assistant
+
+## 📖 Description
+LifeLine Emergency Assistant is a simple web-based application designed to provide quick help during emergency situations. It allows users to trigger SOS alerts, find nearby hospitals, and access first aid guidance instantly.
+
+This project focuses on reducing response time and helping users take immediate action during critical situations.
+
+---
+
+## ❗ Problem Statement
+- People panic during emergencies and are unable to take quick decisions  
+- Difficulty in finding nearby hospitals in urgent situations  
+- Lack of awareness about basic first aid  
+- Delay in getting immediate help  
+
+---
+
+## 💡 Proposed Solution
+This system provides a simple and user-friendly interface where users can:
+- Trigger an SOS alert  
+- Find nearby hospitals instantly using maps  
+- Access step-by-step first aid instructions  
+
+---
+
+## 🌟 Features
+- 🚨 SOS Emergency Alert  
+- 🏥 Nearby Hospital Finder (Google Maps integration)  
+- 🩹 First Aid Guidance  
+- 🖥️ Simple and interactive UI  
+- ⚡ Quick response system  
+
+---
+
+## 🛠️ Technologies Used
+- HTML  
+- CSS (inline styling)  
+- JavaScript  
+
+---
+
+## ⚙️ How It Works
+1. User clicks **SOS button** → Displays emergency alert instructions  
+2. User clicks **Nearby Hospitals** → Opens Google Maps  
+3. User clicks **First Aid** → Shows options like bleeding, burn, etc.  
+4. User selects condition → Displays proper first aid steps  
+
+---
+
+## 🚀 How to Run
+1. Download or clone the repository  
+2. Open the file:
