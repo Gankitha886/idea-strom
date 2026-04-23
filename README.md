@@ -51,8 +51,8 @@ This system provides a simple and user-friendly interface where users can:
 1. Download or clone the repository  
 2. Open the file:
 
-#team details
-Ankitha G G
-Ankita ekbote
-Harshitha N C
-J Bhumika
+#team details:
+Ankitha G G .
+Ankita ekbote.
+Harshitha N C.
+J Bhumika .
